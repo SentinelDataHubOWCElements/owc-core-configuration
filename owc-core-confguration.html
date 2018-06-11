@@ -1,0 +1,36 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="owc-core-confguration">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>Hello [[prop1]]!</h2>
+  </template>
+
+  <script>
+    /**
+     * `owc-core-confguration`
+     * Configuration Element
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class OwcCoreConfguration extends Polymer.Element {
+      static get is() { return 'owc-core-confguration'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'owc-core-confguration'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(OwcCoreConfguration.is, OwcCoreConfguration);
+  </script>
+</dom-module>
